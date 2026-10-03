@@ -208,7 +208,7 @@ def callback_inline(call):
 if __name__ == "__main__":
     print("Бот успешно запущен и слушает команды...")
     bot.infinity_polling(none_stop=True)
-    ]
+    
     for i in range(0, len(days), 2):
         row = [types.InlineKeyboardButton(text=t, callback_data=d) for t, d in days[i:i + 2]]
         markup.add(*row)
